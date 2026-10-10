@@ -1,0 +1,37 @@
+{
+  "request": "将仓库完善到提需求，流程自动跟随",
+  "kind": "infrastructure",
+  "files": [
+    ".github/pull_request_template.md",
+    ".github/workflows/ci.yml",
+    "AGENTS.md",
+    "README.md",
+    "docs/workflow.md",
+    "package.json",
+    "scripts/change-policy.mjs",
+    "scripts/check-change.mjs",
+    "scripts/new-change.mjs",
+    "tests/change-policy.test.ts"
+  ],
+  "specs": {
+    "action": "unchanged",
+    "paths": [
+      "specs/todo.md",
+      "specs/operations.md"
+    ],
+    "reason": "固化 Agent 工作流程和交付门禁，不改变任务清单或站点监控行为"
+  },
+  "acceptance": [],
+  "checks": [
+    {
+      "command": "npm test",
+      "outcome": "passed",
+      "evidence": "record.md：33 项测试通过，含 10 项变更规则和临时 Git 仓库集成验证"
+    },
+    {
+      "command": "npm run check:traceability && npm run typecheck && npm run build -- --base=/sdd-sdlc-demo/",
+      "outcome": "passed",
+      "evidence": "record.md：结构、类型与生产构建通过"
+    }
+  ]
+}
