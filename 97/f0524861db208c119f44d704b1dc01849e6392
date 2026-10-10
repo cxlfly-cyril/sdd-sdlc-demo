@@ -1,0 +1,21 @@
+changes/002-ci/tasks.md
+  s_12b6c76b3709fe::t_15089bd4362753 6
+changes/002-ci/verification.md
+  s_12b6c76b3709fe::t_15089bd4362753 15
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.45-trip",
+  "base_commit_sha": "97f0524861db208c119f44d704b1dc01849e6392",
+  "prompts": {},
+  "sessions": {
+    "s_12b6c76b3709fe": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1238b-a422-7ff0-ae57-e8cd0b68e459",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "xlcang <xlcang@ctrip.com>"
+    }
+  }
+}
