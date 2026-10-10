@@ -12,4 +12,4 @@
 
 首次结构检查未识别中文冒号；修正为同时支持中英文冒号后验证通过。
 
-真实 CI：待 PR 触发后补充。本阶段未部署，也未配置强制分支保护。
+真实 CI：源码提交 `2ba5288` 在 [Actions 运行 38020248482](https://github.com/cxlfly-cyril/sdd-sdlc-demo/actions/runs/38020248482) 全部通过，Acceptance checks 耗时 35 秒；browser-results 报告上传成功。此后仅补充验证文档，PR 最新提交的 Checks 仍须通过。本阶段未部署，也未配置强制分支保护。
