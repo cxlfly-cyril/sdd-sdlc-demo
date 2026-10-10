@@ -1,0 +1,31 @@
+traceability.md
+  s_12b6c76b3709fe::t_f14d1ad781a16c 10
+specs/todo.md
+  s_12b6c76b3709fe::t_f14d1ad781a16c 3,19,29-30
+changes/007-hover-delete/change.json
+  s_12b6c76b3709fe::t_f6986fa1414dc2 2-9,11,15,17-37
+  s_12b6c76b3709fe::t_f14d1ad781a16c 1,10,12-14,16,38
+changes/007-hover-delete/record.md
+  s_12b6c76b3709fe::t_f6986fa1414dc2 1,5,7,9-13
+  s_12b6c76b3709fe::t_f14d1ad781a16c 2-4,6,8
+src/style.css
+  s_12b6c76b3709fe::t_f14d1ad781a16c 130-136
+tests/e2e/todo.spec.ts
+  s_12b6c76b3709fe::t_f14d1ad781a16c 14,33-62
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.45-trip",
+  "base_commit_sha": "93d3afc5c84afb973547d4422eef116cf921c4b4",
+  "prompts": {},
+  "sessions": {
+    "s_12b6c76b3709fe": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1238b-a422-7ff0-ae57-e8cd0b68e459",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "xlcang <xlcang@ctrip.com>"
+    }
+  }
+}
