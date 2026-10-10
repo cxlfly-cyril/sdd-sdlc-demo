@@ -127,7 +127,13 @@ li {
   cursor:pointer;
   padding:8px;
   flex-shrink:0}
-@media (hover:hover) and (pointer:fine) {
+@media (min-width:541px) and (hover:hover) and (pointer:fine) {
+  #tasks li .remove {
+    opacity:0;
+    pointer-events:none}
+  #tasks li:hover .remove, #tasks li:focus-within .remove {
+    opacity:1;
+    pointer-events:auto}
   .remove:hover {
     color:#294e3d;
     background:#f5f4ed}

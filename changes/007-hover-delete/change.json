@@ -1,0 +1,38 @@
+{
+  "request": "PC 端删除操作改成悬停时显示",
+  "kind": "behavior",
+  "files": [
+    "src/style.css",
+    "specs/todo.md",
+    "tests/e2e/todo.spec.ts",
+    "traceability.md"
+  ],
+  "specs": {
+    "action": "updated",
+    "paths": [
+      "specs/todo.md"
+    ],
+    "reason": "在 AC-004 明确 PC 悬停/键盘焦点显示及手机常驻规则；删除数据行为保持不变"
+  },
+  "acceptance": [
+    "AC-004",
+    "AC-005"
+  ],
+  "checks": [
+    {
+      "command": "npm test && npm run typecheck",
+      "outcome": "passed",
+      "evidence": "record.md：33 项单元测试及类型检查通过"
+    },
+    {
+      "command": "npm run test:e2e",
+      "outcome": "passed",
+      "evidence": "record.md：6 项浏览器验收通过，新增 PC 和手机场景"
+    },
+    {
+      "command": "桌面、悬停及手机截图检查",
+      "outcome": "passed",
+      "evidence": "record.md：桌面默认隐藏且行布局稳定，悬停显示；手机常驻"
+    }
+  ]
+}
