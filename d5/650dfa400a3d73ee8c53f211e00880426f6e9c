@@ -1,0 +1,23 @@
+changes/006-subtle-delete/change.json
+  s_12b6c76b3709fe::t_d6e346f83d09a1 2-35
+traceability.md
+  s_12b6c76b3709fe::t_d6e346f83d09a1 10
+changes/006-subtle-delete/record.md
+  s_12b6c76b3709fe::t_d6e346f83d09a1 1-15
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.45-trip",
+  "base_commit_sha": "d5650dfa400a3d73ee8c53f211e00880426f6e9c",
+  "prompts": {},
+  "sessions": {
+    "s_12b6c76b3709fe": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1238b-a422-7ff0-ae57-e8cd0b68e459",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "xlcang <xlcang@ctrip.com>"
+    }
+  }
+}
