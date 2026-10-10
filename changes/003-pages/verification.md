@@ -11,6 +11,6 @@
 
 首次 preview 未设置 base，资产检查未通过；补充 preview 的 --base 参数后通过。
 
-PR CI：创建后核验，证据见 PR Checks。
+PR CI：[38021505829](https://github.com/cxlfly-cyril/sdd-sdlc-demo/actions/runs/38021505829) 全部通过（59 秒）。
 
-真实发布和线上验收：未执行，需用户合并此 PR 后由 main 工作流触发。预期地址：https://cxlfly-cyril.github.io/sdd-sdlc-demo/ 。尚不声称已上线。
+真实发布和线上验收：用户合并 PR #4 后，[main CI 38021632785](https://github.com/cxlfly-cyril/sdd-sdlc-demo/actions/runs/38021632785) 全部成功。Acceptance checks 55 秒，Deploy and verify Pages 64 秒；线上浏览器测试和报告上传通过。在线地址：https://cxlfly-cyril.github.io/sdd-sdlc-demo/ 。
