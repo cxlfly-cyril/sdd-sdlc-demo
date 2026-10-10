@@ -1,0 +1,57 @@
+tests/tasks.test.ts
+  s_12b6c76b3709fe::t_62bb9270b772fe 3
+src/tasks.ts
+  s_12b6c76b3709fe::t_911a4dd9787928 1-12
+changes/001-initial/tasks.md
+  s_12b6c76b3709fe::t_a3def3e7b0e191 4-7
+  s_12b6c76b3709fe::t_087bdd5d1a128b 8
+vitest.config.ts
+  s_12b6c76b3709fe::t_911a4dd9787928 1-2
+src/storage.ts
+  s_12b6c76b3709fe::t_911a4dd9787928 1-20
+changes/001-initial/plan.md
+  s_12b6c76b3709fe::t_62bb9270b772fe 3
+package.json
+  s_12b6c76b3709fe::t_911a4dd9787928 9-34
+traceability.md
+  s_12b6c76b3709fe::t_a3def3e7b0e191 3,5-11,13-15
+README.md
+  s_12b6c76b3709fe::t_62bb9270b772fe 7,30-47
+src/main.ts
+  s_12b6c76b3709fe::t_911a4dd9787928 1-38
+playwright.config.ts
+  s_12b6c76b3709fe::t_0e49752d0bfb7d 2
+  s_12b6c76b3709fe::t_911a4dd9787928 1
+tsconfig.json
+  s_12b6c76b3709fe::t_911a4dd9787928 1
+src/style.css
+  s_12b6c76b3709fe::t_77dd054c605bf6 1-167
+specs/todo.md
+  s_12b6c76b3709fe::t_62bb9270b772fe 3,26,28
+src/vite-env.d.ts
+  s_12b6c76b3709fe::t_65fc1feec4d027 1
+index.html
+  s_12b6c76b3709fe::t_911a4dd9787928 1-7
+changes/001-initial/intent.md
+  s_12b6c76b3709fe::t_62bb9270b772fe 3,9,11
+changes/001-initial/verification.md
+  s_12b6c76b3709fe::t_087bdd5d1a128b 3-4,6,8-15,17-19
+package-lock.json
+  s_12b6c76b3709fe::t_087bdd5d1a128b 1-1614
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.45-trip",
+  "base_commit_sha": "4e22a16f4a8f88c971a85ca6ee54670081358c34",
+  "prompts": {},
+  "sessions": {
+    "s_12b6c76b3709fe": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1238b-a422-7ff0-ae57-e8cd0b68e459",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "xlcang <xlcang@ctrip.com>"
+    }
+  }
+}
