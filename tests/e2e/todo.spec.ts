@@ -44,6 +44,9 @@ test('AC-004 desktop delete reveals on row hover and keyboard focus', async ({pa
  await expect(remove).toHaveCSS('opacity','1');
  await page.mouse.move(0,0);
  await expect(remove).toHaveCSS('opacity','0');
+ await page.getByRole('checkbox').check();
+ await page.mouse.move(0,0);
+ await expect(remove).toHaveCSS('opacity','0');
  await page.getByLabel('下一件要做的事').focus();
  await page.keyboard.press('Tab'); await page.keyboard.press('Tab'); await page.keyboard.press('Tab');
  await expect(remove).toBeFocused(); await expect(remove).toHaveCSS('opacity','1');

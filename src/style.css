@@ -131,7 +131,7 @@ li {
   #tasks li .remove {
     opacity:0;
     pointer-events:none}
-  #tasks li:hover .remove, #tasks li:focus-within .remove {
+  #tasks li:hover .remove, #tasks li:has(:focus-visible) .remove {
     opacity:1;
     pointer-events:auto}
   .remove:hover {
