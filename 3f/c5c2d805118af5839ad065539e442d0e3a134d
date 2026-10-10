@@ -1,0 +1,23 @@
+changes/007-hover-delete/record.md
+  s_12b6c76b3709fe::t_481288be78716b 5,11
+tests/e2e/todo.spec.ts
+  s_12b6c76b3709fe::t_481288be78716b 47-49
+src/style.css
+  s_12b6c76b3709fe::t_481288be78716b 134
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.45-trip",
+  "base_commit_sha": "3fc5c2d805118af5839ad065539e442d0e3a134d",
+  "prompts": {},
+  "sessions": {
+    "s_12b6c76b3709fe": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1238b-a422-7ff0-ae57-e8cd0b68e459",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "xlcang <xlcang@ctrip.com>"
+    }
+  }
+}
