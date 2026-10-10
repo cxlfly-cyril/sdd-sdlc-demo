@@ -1,0 +1,39 @@
+.github/pull_request_template.md
+  s_12b6c76b3709fe::t_56ca51e94daa26 1-14
+traceability.md
+  s_12b6c76b3709fe::t_56ca51e94daa26 1-13
+README.md
+  s_12b6c76b3709fe::t_56ca51e94daa26 2-30
+changes/001-initial/tasks.md
+  s_12b6c76b3709fe::t_56ca51e94daa26 1-10
+changes/001-initial/verification.md
+  s_12b6c76b3709fe::t_56ca51e94daa26 1-12
+.gitignore
+  s_12b6c76b3709fe::t_56ca51e94daa26 1-7
+AGENTS.md
+  s_12b6c76b3709fe::t_56ca51e94daa26 1-9
+changes/001-initial/intent.md
+  s_12b6c76b3709fe::t_56ca51e94daa26 1-11
+changes/001-initial/plan.md
+  s_12b6c76b3709fe::t_56ca51e94daa26 1-12
+docs/workflow.md
+  s_12b6c76b3709fe::t_56ca51e94daa26 1-23
+specs/todo.md
+  s_12b6c76b3709fe::t_56ca51e94daa26 1-28
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.45-trip",
+  "base_commit_sha": "64a780c8ef8ff8e3a0d2c45023d4ead3e60a4572",
+  "prompts": {},
+  "sessions": {
+    "s_12b6c76b3709fe": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1238b-a422-7ff0-ae57-e8cd0b68e459",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "xlcang <xlcang@ctrip.com>"
+    }
+  }
+}
