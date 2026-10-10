@@ -12,7 +12,9 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:e2e": "playwright test",
-    "check:traceability": "node scripts/check-traceability.mjs"
+    "check:traceability": "node scripts/check-traceability.mjs",
+    "change:new": "node scripts/new-change.mjs",
+    "check:change": "node scripts/check-change.mjs"
   },
   "repository": {
     "type": "git",
