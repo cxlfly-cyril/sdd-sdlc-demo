@@ -116,16 +116,25 @@ li {
   text-decoration:line-through;
   color:#93998e}
 .remove {
-  font-size:12px;
+  font-size:11px;
+  line-height:1;
+  min-width:44px;
+  min-height:44px;
+  border-radius:3px;
   border:0;
   background:transparent;
-  color:#777f72;
+  color:#74786f;
   cursor:pointer;
   padding:8px;
   flex-shrink:0}
-.remove:hover {
-  color:#a23c26;
-  background:#faf0e9}
+@media (hover:hover) and (pointer:fine) {
+  .remove:hover {
+    color:#294e3d;
+    background:#f5f4ed}
+}
+.remove:active {
+  color:#294e3d;
+  background:#f5f4ed}
 #empty {
   padding:42px 0 28px;
   text-align:center;
@@ -151,6 +160,8 @@ footer {
 [hidden] {
   display:none!important}
 @media(max-width:540px) {
+  .remove {
+    font-size:12px}
   main {
   padding:40px 18px}
 h1 {

@@ -1,0 +1,36 @@
+{
+  "request": "删除按钮太抢眼了，弱化一下，手机上仍然方便操作",
+  "kind": "visual",
+  "files": [
+    "src/style.css",
+    "traceability.md"
+  ],
+  "specs": {
+    "action": "unchanged",
+    "paths": [
+      "specs/todo.md"
+    ],
+    "reason": "仅调整删除控件的视觉和点击区域，按 ID 删除及刷新持久化的预期行为不变"
+  },
+  "acceptance": [
+    "AC-004",
+    "AC-005"
+  ],
+  "checks": [
+    {
+      "command": "npm test && npm run typecheck",
+      "outcome": "passed",
+      "evidence": "record.md：33 项测试及类型检查通过"
+    },
+    {
+      "command": "PLAYWRIGHT_BASE_URL=http://127.0.0.1:4180/ npm run test:e2e",
+      "outcome": "passed",
+      "evidence": "record.md：4 项浏览器验收通过"
+    },
+    {
+      "command": "桌面、手机触控和键盘检查",
+      "outcome": "passed",
+      "evidence": "record.md：44×44 点击区域、Tab/Enter 删除、刷新保留和无横向溢出"
+    }
+  ]
+}
