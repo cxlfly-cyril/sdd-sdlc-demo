@@ -4,7 +4,7 @@
 
 ## 当前阶段
 
-第 5 步：GitHub Actions CI 已合并，接入 Pages 发布及线上验收；维护自动化为后续步骤。
+第 6 步：应用已上线且线上验收通过，接入定时可用性监控与故障记录；Agent 诊断修复为后续步骤。
 
 ## 产品范围
 
@@ -55,7 +55,7 @@ PR 和 main 更新触发 `CI / Acceptance checks`，执行追溯结构检查、�
 
 ## 演示发布
 
-预期在线地址：<https://cxlfly-cyril.github.io/sdd-sdlc-demo/>。首次部署 PR 合并前尚未发布。
+在线地址：<https://cxlfly-cyril.github.io/sdd-sdlc-demo/>。发布与线上验收已通过。
 
 PR 会对仓库子路径下的生产构建执行浏览器验收。main 检查通过后发布 Pages，再验证页面资产与线上业务；失败时查看 Deploy and verify Pages 日志和 online-browser-results 报告。
 
@@ -69,3 +69,11 @@ PLAYWRIGHT_BASE_URL=http://127.0.0.1:4174/sdd-sdlc-demo/ npm run test:e2e
 ```
 
 发布失败的恢复方法见 changes/003-pages/plan.md。浏览器存储按站点来源隔离，本地任务不会迁移到线上。
+
+## 可用性监控
+
+Pages monitor 每 30 分钟检查页面和 JS、CSS；失败时建立一个故障 Issue，持续失败去重，恢复时记录证据并关闭。正常状态不反复评论。Actions 支持手动执行，并保留 monitor-result 报告 7 天。
+
+只读本地检查：`MONITOR_DRY_RUN=1 node scripts/monitor-pages.mjs`。
+
+运行约定见 specs/operations.md。定时执行不是精确的可用性 SLA；真实故障演练和 Agent 自动修复仍待后续验证。
