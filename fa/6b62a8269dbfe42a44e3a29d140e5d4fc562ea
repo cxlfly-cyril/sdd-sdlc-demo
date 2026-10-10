@@ -1,0 +1,52 @@
+changes/004-monitor/verification.md
+  s_12b6c76b3709fe::t_73146c611be437 1-6,8-9
+  s_12b6c76b3709fe::t_58e92f2a8a3f9b 7
+changes/004-monitor/intent.md
+  s_12b6c76b3709fe::t_73146c611be437 1-5
+traceability.md
+  s_12b6c76b3709fe::t_58e92f2a8a3f9b 16-26
+tests/monitor.test.ts
+  s_12b6c76b3709fe::t_13230750f7f644 1-42
+scripts/monitor-state.mjs
+  s_12b6c76b3709fe::t_13230750f7f644 1-19
+changes/003-pages/tasks.md
+  s_12b6c76b3709fe::t_73146c611be437 6-7
+changes/004-monitor/tasks.md
+  s_12b6c76b3709fe::t_73146c611be437 1-10
+scripts/monitor-pages.mjs
+  s_12b6c76b3709fe::t_13230750f7f644 1-50
+.github/workflows/monitor.yml
+  s_12b6c76b3709fe::t_13230750f7f644 1-33
+scripts/wait-for-site.mjs
+  s_12b6c76b3709fe::t_13230750f7f644 1-2,6
+changes/003-pages/verification.md
+  s_12b6c76b3709fe::t_73146c611be437 14,16
+changes/004-monitor/plan.md
+  s_12b6c76b3709fe::t_73146c611be437 1-9
+specs/operations.md
+  s_12b6c76b3709fe::t_73146c611be437 1-12
+docs/workflow.md
+  s_12b6c76b3709fe::t_73146c611be437 19,21-23
+scripts/site-health.mjs
+  s_12b6c76b3709fe::t_13230750f7f644 1-17
+README.md
+  s_12b6c76b3709fe::t_73146c611be437 7,58,72-79
+.gitignore
+  s_12b6c76b3709fe::t_13230750f7f644 8-9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.45-trip",
+  "base_commit_sha": "fa6b62a8269dbfe42a44e3a29d140e5d4fc562ea",
+  "prompts": {},
+  "sessions": {
+    "s_12b6c76b3709fe": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1238b-a422-7ff0-ae57-e8cd0b68e459",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "xlcang <xlcang@ctrip.com>"
+    }
+  }
+}
