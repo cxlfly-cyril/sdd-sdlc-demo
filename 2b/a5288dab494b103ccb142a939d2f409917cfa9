@@ -1,0 +1,39 @@
+.github/workflows/ci.yml
+  s_12b6c76b3709fe::t_ce6856c2e8937b 1-48
+package.json
+  s_12b6c76b3709fe::t_ce6856c2e8937b 14-15
+scripts/check-traceability.mjs
+  s_12b6c76b3709fe::t_ff1072e3b388b2 7
+  s_12b6c76b3709fe::t_ce6856c2e8937b 1-6,8-24
+README.md
+  s_12b6c76b3709fe::t_ce6856c2e8937b 7,40,49-54
+changes/002-ci/verification.md
+  s_12b6c76b3709fe::t_b74464ae45fc1b 1-15
+changes/002-ci/plan.md
+  s_12b6c76b3709fe::t_ce6856c2e8937b 1-9
+changes/002-ci/intent.md
+  s_12b6c76b3709fe::t_ce6856c2e8937b 1-7
+changes/002-ci/tasks.md
+  s_12b6c76b3709fe::t_b74464ae45fc1b 5
+  s_12b6c76b3709fe::t_ce6856c2e8937b 1-4,6
+playwright.config.ts
+  s_12b6c76b3709fe::t_ce6856c2e8937b 2-19
+docs/workflow.md
+  s_12b6c76b3709fe::t_ce6856c2e8937b 11,13-17
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.45-trip",
+  "base_commit_sha": "2ba5288dab494b103ccb142a939d2f409917cfa9",
+  "prompts": {},
+  "sessions": {
+    "s_12b6c76b3709fe": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1238b-a422-7ff0-ae57-e8cd0b68e459",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "xlcang <xlcang@ctrip.com>"
+    }
+  }
+}
