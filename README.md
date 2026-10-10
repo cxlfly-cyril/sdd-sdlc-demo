@@ -4,7 +4,7 @@
 
 ## 当前阶段
 
-第 3 步：规格已批准，任务清单及自动化验收测试已实现。CI、部署和维护自动化将在后续变更中接入。
+第 4 步：任务清单与验收测试已合并，接入 GitHub Actions CI；部署和维护自动化仍为后续步骤。
 
 ## 产品范围
 
@@ -37,6 +37,7 @@ npm run dev
 执行验证：
 
 ```bash
+npm run check:traceability
 npm run typecheck
 npm test
 npm run build
@@ -45,3 +46,9 @@ npm run test:e2e
 ```
 
 浏览器数据仅保存在当前浏览器；存储损坏或不可用时页面会提示。
+
+## 持续集成
+
+PR 和 main 更新触发 `CI / Acceptance checks`，执行追溯结构检查、类型检查、单元测试、构建和 Chromium 验收。Actions 页面可下载 browser-results 报告；失败时包含 trace 和截图。
+
+追溯结构检查不能代替业务验收。请等待 CI 通过后人工审阅合并；仓库尚未配置强制分支保护。
