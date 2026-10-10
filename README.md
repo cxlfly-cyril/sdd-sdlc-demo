@@ -4,7 +4,7 @@
 
 ## 当前阶段
 
-第 4 步：任务清单与验收测试已合并，接入 GitHub Actions CI；部署和维护自动化仍为后续步骤。
+第 5 步：GitHub Actions CI 已合并，接入 Pages 发布及线上验收；维护自动化为后续步骤。
 
 ## 产品范围
 
@@ -52,3 +52,20 @@ npm run test:e2e
 PR 和 main 更新触发 `CI / Acceptance checks`，执行追溯结构检查、类型检查、单元测试、构建和 Chromium 验收。Actions 页面可下载 browser-results 报告；失败时包含 trace 和截图。
 
 追溯结构检查不能代替业务验收。请等待 CI 通过后人工审阅合并；仓库尚未配置强制分支保护。
+
+## 演示发布
+
+预期在线地址：<https://cxlfly-cyril.github.io/sdd-sdlc-demo/>。首次部署 PR 合并前尚未发布。
+
+PR 会对仓库子路径下的生产构建执行浏览器验收。main 检查通过后发布 Pages，再验证页面资产与线上业务；失败时查看 Deploy and verify Pages 日志和 online-browser-results 报告。
+
+本地验证生产版本：
+
+```bash
+npm run build -- --base=/sdd-sdlc-demo/
+npm run preview -- --base=/sdd-sdlc-demo/ --host 127.0.0.1 --port 4174
+# 另一个终端
+PLAYWRIGHT_BASE_URL=http://127.0.0.1:4174/sdd-sdlc-demo/ npm run test:e2e
+```
+
+发布失败的恢复方法见 changes/003-pages/plan.md。浏览器存储按站点来源隔离，本地任务不会迁移到线上。
