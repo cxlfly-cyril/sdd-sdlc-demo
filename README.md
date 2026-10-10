@@ -1,2 +1,30 @@
 # sdd-sdlc-demo
-A minimal spec-driven application with an AI-native delivery and feedback loop.
+
+用一个任务清单应用演示规格驱动开发和 AI-native SDLC。
+
+## 当前阶段
+
+第 2 步：规格与流程骨架已准备，等待用户审阅。业务实现、CI、部署和维护自动化尚未创建。
+
+## 产品范围
+
+Vite + TypeScript，无前端框架；任务保存在 localStorage。支持添加、完成和删除任务。
+
+## 文档入口
+
+- [当前业务规格](specs/todo.md)：预期行为的权威依据。
+- [初始变更](changes/001-initial/intent.md)：此次目标、方案、任务和验证证据。
+- [验收追溯](traceability.md)：验收标准到测试的映射。
+- [开发流程](docs/workflow.md)：阶段交接与完成条件。
+
+## 本项目的 Full SDD 约定
+
+持续维护规格，代码和测试可追溯到验收标准，需求变化与缺陷修复同步维护相关产物。此称谓是项目内约定，不是行业认证。
+
+## 计划中的生命周期
+
+Issue → 意图 → 规格审阅 → 方案与任务 → AI 实现和测试 → PR/CI → 人工批准 → 演示部署 → 线上检查 → 事件 Issue → 修复 PR。
+
+## 运行方法
+
+业务实现后提供 package.json 脚本与运行说明。当前没有可运行应用。
