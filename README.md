@@ -4,7 +4,7 @@
 
 ## 当前阶段
 
-第 2 步：规格与流程骨架已准备，等待用户审阅。业务实现、CI、部署和维护自动化尚未创建。
+第 3 步：规格已批准，任务清单及自动化验收测试已实现。CI、部署和维护自动化将在后续变更中接入。
 
 ## 产品范围
 
@@ -27,4 +27,21 @@ Issue → 意图 → 规格审阅 → 方案与任务 → AI 实现和测试 →
 
 ## 运行方法
 
-业务实现后提供 package.json 脚本与运行说明。当前没有可运行应用。
+需要 Node.js 22.12+ 或支持当前 Vite 的更新版本。
+
+```bash
+npm ci
+npm run dev
+```
+
+执行验证：
+
+```bash
+npm run typecheck
+npm test
+npm run build
+npx playwright install chromium
+npm run test:e2e
+```
+
+浏览器数据仅保存在当前浏览器；存储损坏或不可用时页面会提示。

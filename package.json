@@ -1,0 +1,35 @@
+{
+  "name": "sdd-sdlc-demo",
+  "version": "1.0.0",
+  "description": "用一个任务清单应用演示规格驱动开发和 AI-native SDLC。",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cxlfly-cyril/sdd-sdlc-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/cxlfly-cyril/sdd-sdlc-demo/issues"
+  },
+  "homepage": "https://github.com/cxlfly-cyril/sdd-sdlc-demo#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.4",
+    "vitest": "^4.1.11"
+  },
+  "private": true
+}

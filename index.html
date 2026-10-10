@@ -1,0 +1,7 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#f4f0e8"><title>今日清单</title></head>
+<body><main><header><span class="eyebrow">留一点空间，做重要的事</span><h1>今日清单<span aria-hidden="true">.</span></h1><p>写下来，一件一件完成。</p></header>
+<section class="paper" aria-label="任务清单"><form id="task-form" novalidate><label for="task-title">下一件要做的事</label><div class="entry"><input id="task-title" autocomplete="off" placeholder="例如：读完一本书的第一章" aria-describedby="error"><button type="submit">添加任务 <span aria-hidden="true">↗</span></button></div><p id="error" role="alert"></p></form>
+<div class="list-heading"><h2>我的任务</h2><span id="count" aria-live="polite"></span></div><ul id="tasks"></ul><p id="empty">清单还是空的。<br><span>从一件小事开始吧。</span></p><p id="notice" role="status"></p></section><footer>你的清单，保存在这个浏览器里。</footer></main><script type="module" src="/src/main.ts"></script></body>
+</html>
